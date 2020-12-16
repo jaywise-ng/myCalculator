@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+  <link rel="stylesheet" href="calstyle.css">
+    <script src="https://kit.fontawesome.com/ea38014683.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   <p id="para">Welcome to my javascript calculator</p>
+   <main class="calculator">
+    <div>
+        <input type="text" name="" id="number_display" placeholder="0" >
+    </div>
+    <table id="buttons">
+    
+        <div>
+            <th colspan="3"><input type="button" value="clear" id="clr" onclick="clr()"></th>
+            <th colspan="2"><input type="button" value="&ShortLeftArrow;" id="backspce" onclick="backButton()"></th>
+        </div>
+        
+        <div id="cal_button">
+        
+        <tr id="first_row">
+        <td><input type="button" value="7" id="seven" class="no_btn" onclick="dis('7')"></td>
+        <td><input type="button" value="8" id="eight" class="no_btn" onclick="dis('8')"></td>
+        <td><input type="button" value="9" id="nine" class="no_btn" onclick="dis('9')"></td>
+        <td><input type="button" value="/" id="divide" class="opr_btn" onclick="dis('/')"></td>
+        
+        </tr>
+        <tr id="second_row">
+        
+        <td><input type="button" value="4" id="four" class="no_btn" onclick="dis('4')"></td>
+        <td><input type="button" value="5" id="five" class="no_btn" onclick="dis('5')"></td>
+        <td><input type="button" value="6" id="six" class="no_btn" onclick="dis('6')"></td>
+        <td><input type="button" value="*" id="multiply" class="opr_btn" onclick="dis('*')"></td>
+        
+        
+        </tr>
+        
+       <tr id="third_row">
+        <td><input type="button" value="1" id="one" class="no_btn" onclick="dis('1')"></td>
+        <td><input type="button" value="2" id="two" class="no_btn" onclick="dis('2')"></td>
+        <td><input type="button" value="3" id="three" class="no_btn" onclick="dis('3')"></td>
+        <td><input type="button" value="-" id="minus" class="opr_btn" onclick="dis('-')"></td>
+    
+       </tr>
+        
+       <tr id="fourth_row">
+        <td><input type="button" value="0" id="zero" class="no_btn" onclick="dis('0')" ></td>
+        <td><input type="button" value="." id="decimal" class="no_btn" onclick="dis('.')"></td>
+        <td><input type="button" value="+" id="add" class="opr_btn" onclick="dis('+')"></td>
+        <td><input type="button" value="&radic;" id="sqrt" class="opr_btn" onclick="doSqrt()"></td>
+        
+       </tr>
+    
+        <tr id="fifth_row">
+        <td><input type="button" value="sin" id="sin" class="opr_btn" onclick="doSin()"></td>
+        <td><input type="button" value="cos" id="cos" class="opr_btn" onclick="doCos()"></td>
+        <td><input type="button" value="tan" id="tan" class="opr_btn" onclick="doTan()"></td>
+        <td><input type="button" value="X!" id="fac" class="opr_btn" onclick="facto()"></td>
+        </tr>
+    <tr id="sixth_row">
+        <td><input type="button" value="&#8731;" id="cube_root" class="opr_btn" onclick="doCbrt()"></td>
+        <td><input type="button" value="&#928;" id="pi" class="opr_btn" onclick="pie()"></td>
+        <td><input type="button" value="&deg;" id="degree" class="opr_btn" onclick="deg()"></td>
+        <td><input type="button" value="=" id="equal" class="opr_btn" onclick="solve()"></td> 
+       
+    </tr>
+    
+        <tr id="light">
+            <td colspan="4"><button onclick="lightToggle()" id="light"><i class="fas fa-adjust fa-2x" id="adjust"></i></button></td>
+        </tr>
+        </div>
+    
+       
+    
+    </table>
+
+
+   </main>
+
+
+
+</body>
+<script src="calculator.js"></script>
+</html>
